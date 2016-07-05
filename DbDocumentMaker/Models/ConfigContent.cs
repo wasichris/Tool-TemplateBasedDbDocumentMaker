@@ -43,7 +43,7 @@ namespace DbDocumentMaker.Models
         public ConfigContent()
         {
             this.DocTemplateLocation = @"DocTemplate\";
-            this.CurrentDocTemplateName = @"db report template.xlsx";
+            this.CurrentDocTemplateName = @"full template.xlsx";
             this.OutputDocLocation = @"OutputDoc\";
             this.DocTablePackages = new Dictionary<string, List<string>>();
             this.Connections = new List<Connection>()

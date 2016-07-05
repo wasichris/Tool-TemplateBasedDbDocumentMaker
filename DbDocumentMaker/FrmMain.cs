@@ -107,13 +107,22 @@ namespace DbDocumentMaker
             var checkedTableNames = GetCheckedTableNames();
             if (checkedTableNames.Count > 0)
             {
-                // generate db document
-                string templatePath = Config.GetInstance().Content.CurrentDocTemplatePath;
-                string outputPath = Config.GetInstance().Content.OutputDocLocation + Guid.NewGuid().ToString() + ".xlsx";
-                _dbManager.GenerateDocument(checkedTableNames, templatePath, outputPath);
+                try
+                {
+                    // generate db document
+                    string templatePath = Config.GetInstance().Content.CurrentDocTemplatePath;
+                    string outputPath = Config.GetInstance().Content.OutputDocLocation + Guid.NewGuid().ToString() + ".xlsx";
+                    _dbManager.GenerateDocument(checkedTableNames, templatePath, outputPath);
 
-                // open it
-                Process.Start(outputPath);
+                    // open it
+                    Process.Start(outputPath);
+                }
+                catch (Exception ex)
+                {
+                    MsgBoxHelper.Error("Failure: " + ex.Message);
+                }
+
+                
             }
             else
             { MsgBoxHelper.Warning("Please select table!"); }
