@@ -64,4 +64,4 @@ After the file is generated, it will be opened automatically and the format just
 
 #Acknowledgement
 
-Thanks for [Astah](http://astah.net/) inspired me to create the template-based document idea.
+Thanks [Astah](http://astah.net/) inspired me to create the template-based document idea.
