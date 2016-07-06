@@ -67,18 +67,22 @@ After the file is generated, it will be opened automatically and the format just
 You can change template to meet your requirements as below.
 
 [Template for table list]
+
 ![Main](/img/07 SimpleTableTemplate.png)
 
 
 [Template for column info.]
+
 ![Main](/img/08 SimpleColumnTemplate.png)
 
 The document will be the same format as your design.
 
 [table list sheet]
+
 ![Main](/img/09 SimpleTableResult.png)
 
 [column list sheet]
+
 ![Main](/img/10 SimpleColumnResult.png)
 
 #Acknowledgement
