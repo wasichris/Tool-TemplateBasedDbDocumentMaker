@@ -44,7 +44,7 @@ I provide a default template to show you how to customize your own document. In 
 
 ![Main](/img/03 TableTemplate.png)
 
-In #TableSchemaTemplate sheet, you can change everything like removing some columns which you don't need as well but remember keep the simple rule "Do not split one column's tags into multiple rows" for each column. Otherwise, you can put #table.name, #table.description and #table.type tag to somewhere you want to show up.
+In #TableSchemaTemplate sheet, you can change everything like removing some columns which you don't need as well but remember to keep the simple rule "Do not split one column's tags into multiple rows" for each column information. Otherwise, you can put #table.name, #table.description and #table.type tag to somewhere you want to show up.
 
 [Template for column info.]
 
@@ -61,6 +61,25 @@ After the file is generated, it will be opened automatically and the format just
 [column list sheet]
 
 ![Main](/img/06 ColumnResult.png)
+
+#Make Your Own Template
+
+You can change template to meet your requirements as below.
+
+[Template for table list]
+![Main](/img/07 SimpleTableTemplate.png)
+
+
+[Template for column info.]
+![Main](/img/08 SimpleColumnTemplate.png)
+
+The document will be the same format as your design.
+
+[table list sheet]
+![Main](/img/09 SimpleTableResult.png)
+
+[column list sheet]
+![Main](/img/10 SimpleColumnResult.png)
 
 #Acknowledgement
 

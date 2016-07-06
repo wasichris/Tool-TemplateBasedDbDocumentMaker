@@ -148,8 +148,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="DocTemplate\Explain.txt" />
-    <Content Include="OutputDoc\Explain.txt">
+    <Content Include="DocTemplate\Explanation.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OutputDoc\Explanation.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
