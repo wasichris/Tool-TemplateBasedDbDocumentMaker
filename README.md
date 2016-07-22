@@ -1,3 +1,5 @@
+![build-status](https://travis-ci.org/wasichris/Tool-TemplateBasedDbDocumentMaker.svg?branch=master)
+
 ##**Template-based DB Document Generator for SQL Server**
 
 # Overview
@@ -84,7 +86,3 @@ The document will be the same format as your design.
 [column list sheet]
 
 ![Main](/img/10 SimpleColumnResult.png)
-
-#Acknowledgement
-
-Thanks [Astah](http://astah.net/) inspired me to create the template-based document idea.
