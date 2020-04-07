@@ -80,11 +80,11 @@ namespace DbDocumentMaker.Utility
                       ,CASE 
                         WHEN tb.TABLE_TYPE = 'VIEW'
                         THEN (SELECT value 
-                                FROM sys.fn_listextendedproperty(NULL, 'user', 'dbo', 'view', tb.TABLE_NAME, DEFAULT, DEFAULT)
+                                FROM sys.fn_listextendedproperty(NULL, 'user', tb.TABLE_SCHEMA, 'view', tb.TABLE_NAME, DEFAULT, DEFAULT)
                                 WHERE name = 'MS_Description'
                                 AND objtype = 'VIEW')
                         ELSE (SELECT value 
-                                FROM sys.fn_listextendedproperty(NULL, 'user', 'dbo', 'table', tb.TABLE_NAME, DEFAULT, DEFAULT)
+                                FROM sys.fn_listextendedproperty(NULL, 'user', tb.TABLE_SCHEMA, 'table', tb.TABLE_NAME, DEFAULT, DEFAULT)
                                 WHERE name = 'MS_Description'
                                 AND objtype = 'TABLE')
                        END AS 'TableDescription'
@@ -107,7 +107,7 @@ namespace DbDocumentMaker.Utility
                           ELSE 'NO' 
                        END AS 'Identity'  
                       ,(SELECT value
-                          FROM sys.fn_listextendedproperty(NULL, 'schema', 'dbo', 'table', tb.TABLE_NAME, 'column', DEFAULT)
+                          FROM sys.fn_listextendedproperty(NULL, 'schema', tb.TABLE_SCHEMA, 'table', tb.TABLE_NAME, 'column', DEFAULT)
                           WHERE name = 'MS_Description'
                           AND objtype = 'COLUMN'
                           AND objname COLLATE Chinese_Taiwan_Stroke_CI_AS = col.COLUMN_NAME) AS 'Description'
